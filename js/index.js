@@ -31,8 +31,8 @@ function login() {
 }
 
 // Email & Password Checker
-emailInput.addEventListener("input", check)
-passwordInput.addEventListener("input", check)
+emailInput.addEventListener("blur", check)
+passwordInput.addEventListener("blur", check)
 
 function check() {
   for (var i = 0; i < users.length; i++) {

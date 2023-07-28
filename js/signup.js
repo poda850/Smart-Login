@@ -58,7 +58,7 @@ function checkForDuplicatesEmail() {
 }
 
 //Name Validation
-nameInput.addEventListener("input", validateNameInput)
+nameInput.addEventListener("blur", validateNameInput)
 
 function validateNameInput() {
   if (nameRegex.test(nameInput.value)) {
@@ -76,7 +76,7 @@ function validateNameInput() {
 }
 
 //Email Validation
-emailInput.addEventListener("input", validateEmailInput)
+emailInput.addEventListener("blur", validateEmailInput)
 
 function validateEmailInput() {
   if (emailRegex.test(emailInput.value)) {
@@ -91,7 +91,7 @@ function validateEmailInput() {
 }
 
 //password Validation
-passwordInput.addEventListener("input", validatePasswordInput)
+passwordInput.addEventListener("blur", validatePasswordInput)
 
 function validatePasswordInput() {
   if (passRegex.test(passwordInput.value)) {
@@ -113,7 +113,7 @@ function validatePasswordInput() {
 }
 
 // Confirm Password Validation
-confirmPasswordInput.addEventListener("input", validateConfirmPasswordInput)
+confirmPasswordInput.addEventListener("blur", validateConfirmPasswordInput)
 
 function validateConfirmPasswordInput() {
   if (confirmPasswordInput.value == passwordInput.value) {
