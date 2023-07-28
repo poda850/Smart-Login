@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-dark-subtle">
+    <div class="container over text-center w-50 ">
+        <form
+            class="container text-center d-flex justify-content-center align-items-center flex-column shadow-lg mt-5 rounded-5">
+            <h1 class="fw-bolder text-success my-3">Smart Login System</h1>
+            <div class="input-group my-4 w-75">
+                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                <input id="name" type="text" class="form-control" placeholder="Name" autocomplete="off">
+            </div>
+            <div class="input-group mb-4 w-75">
+                <span class="input-group-text"><i class="fa-solid fa-at"></i></span>
+                <input id="email" type="email" class="form-control" placeholder="example@example.com" autocomplete="off">
+            </div>
+            <div class="input-group mb-4 w-75">
+                <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                <input id="password" type="password" class="form-control" placeholder="Password" autocomplete="off">
+            </div>
+            <div class="input-group mb-4 w-75">
+                <span class="input-group-text"><i class="fa-solid fa-clipboard-check"></i></span>
+                <input id="confirmPassword" type="password" class="form-control" placeholder="Confirm Password" autocomplete="off">
+            </div>
+            <ul id="ValidationBoxInfo" class="fw-bolder text-danger my-3 text-start"></ul>
+            <div class="my-3">
+                <span>You have an account?</span>
+                <a class="btn btn-outline-success" href="index.html">Sign in</a>
+            </div>
+        </form>
+        <button class="btn btn-lg btn-success w-75 rounded-0 rounded-bottom-5 shadow-lg text-light"
+            id="signUp">SignUp</button>
+        <div id="registrationAlert" class="bg-black bg-opacity-75 position-absolute start-0 end-0 top-0 bottom-0 d-none z-3">
+            <div class="d-flex justify-content-center align-items-center vh-100">
+                <h6 class="text-success fs-3 bg-light p-4 rounded-4">
+                    <span>Registration Done</span>
+                    <button class="btn btn-lg btn-success w-25 text-light mt-4" id="ok">OK</button>
+                </h6>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+
+</html>
